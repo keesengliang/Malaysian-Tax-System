@@ -99,6 +99,16 @@ def menu():
                 # Sub Option 1: Calculate Tax and save into the Excel File
                 if sub_option == '1':
                     print('\n---Financial Data Entry---')
+                    print('==================================================================')
+                    print('                    EXAMPLE TAX RELIEF                            ')
+                    print('==================================================================')
+                    print('  1. Individual & Dependents  : RM 9,000 max')
+                    print('  2. Medical Expenses         : RM 10,000 max')
+                    print('  3. Lifestyle/Books/Sports   : RM 2,500 max')
+                    print('  4. Life Insurance & EPF     : RM 7,000 max')
+                    print('  5. Child Care / Kindergarten: RM 3,000 max')
+                    print('==================================================================')
+                    print('  *Please sum up your eligible reliefs and enter the total below.*\n')
                     annual_income = get_input("Enter annual income(RM): ")
                     tax_relief = get_input("Enter tax relief(RM): ")
                     tax_payable = ft.calculate_tax(annual_income,tax_relief)
